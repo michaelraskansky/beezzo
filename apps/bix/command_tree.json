@@ -1,0 +1,6 @@
+{
+  "show":{
+    "sessions": "Bix.List.Sessions.run",
+    "peers": "Bix.List.Peers.run"
+  }
+}

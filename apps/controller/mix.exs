@@ -1,8 +1,8 @@
-defmodule Cli.Mixfile do
+defmodule Controller.Mixfile do
   use Mix.Project
 
   def project do
-    [ app: :cli,
+    [ app: :controller,
       version: "0.0.1",
       deps_path: "../../deps",
       lockfile: "../../mix.lock",
@@ -12,7 +12,7 @@ defmodule Cli.Mixfile do
 
   # Configuration for the OTP application
   def application do
-    [mod: { Cli, [] }]
+    [mod: { Controller, [] }]
   end
 
   # Returns the list of dependencies in the format:

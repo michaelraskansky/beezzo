@@ -1,0 +1,1 @@
+elixir --sname bix --no-halt --erl "-pa /home/bud/Programs/elixir/beezzocs/apps/bix/_build/dev/lib/bix/ebin -user Elixir.Bix.CLI" "$@"

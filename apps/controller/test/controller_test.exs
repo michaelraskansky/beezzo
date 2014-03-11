@@ -1,4 +1,4 @@
-defmodule CliTest do
+defmodule ControllerTest do
   use ExUnit.Case
 
   test "the truth" do
