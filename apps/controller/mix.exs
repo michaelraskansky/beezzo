@@ -12,7 +12,8 @@ defmodule Controller.Mixfile do
 
   # Configuration for the OTP application
   def application do
-    [mod: { Controller, [] }]
+    app_list = [:diameter, :gproc, :poolboy, :jiffy, :cberl, :dcca]  
+    [mod: { Controller, [app_list] }]
   end
 
   # Returns the list of dependencies in the format:
@@ -24,6 +25,11 @@ defmodule Controller.Mixfile do
   # You can depend on another app in the same umbrella with:
   # { :other, in_umbrella: true }
   defp deps do
-    []
+    [
+      { :gproc, github: "uwiger/gproc" },
+      { :gen_leader, github: "garret-smith/gen_leader_revival" },
+      { :dcca, in_umbrella: true}
+    ]
+
   end
 end
